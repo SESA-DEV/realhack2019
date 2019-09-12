@@ -153,7 +153,7 @@ $( document ).ready(function() {
 
   function outerNav() {
 
-    $('.header--nav-toggle').click(function(){
+    $('.nav-img').click(function(){
 
       $('.perspective').addClass('perspective--modalview');
       setTimeout(function(){
