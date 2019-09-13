@@ -1,0 +1,129 @@
+/**************** about css start ****************/
+.about_part{
+    position: relative;
+    z-index: 1;
+    @media #{$tab}{
+        padding: 0;
+    }
+    &:after{
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        background-image: url(../img/about_bg.png);
+        background-size: contain;
+        background-position: left;
+        content: "";
+        background-repeat: no-repeat;
+        z-index: -1;
+        top: -5%;
+        @media #{$tab}{
+            display: none;
+        }
+    }
+    &:before{
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-image: url(../img/About_me.png);
+        background-size: contain;
+        background-position: right;
+        content: "";
+        background-repeat: no-repeat;
+        z-index: -1;
+        @media #{$tab}{
+            display: none;
+        }
+    }
+    .about_text{
+        @media #{$small_mobile}{
+            margin-top: 50px;
+        }
+        @media #{$large_mobile}{
+            margin-top: 50px;
+        }
+        @media #{$tab_device}{
+            margin-top: 50px;
+        }
+        @media #{$medium_device}{
+           
+        }
+        h2{
+            line-height: 1.25;
+            margin-bottom: 35px;
+            position: relative;
+            z-index: 1;
+            text-transform: capitalize;
+            display: inline-block;
+            &:after {
+                position: absolute;
+                content: "";
+                left: 1px;
+                width: 99%;
+                height: 8px;
+                background-color: #7a73cc;
+                bottom: 5px;
+                z-index: -1;
+            }
+            @media #{$small_mobile}{
+                margin-bottom: 15px;
+            }
+            @media #{$large_mobile}{
+                margin-bottom: 15px;
+            }
+            @media #{$tab_device}{
+                font-size: 25px;  
+                margin-bottom: 15px;
+            }
+            @media #{$medium_device}{
+                font-size: 30px;  
+                margin-bottom: 15px;
+            }
+        }
+        p{
+            position: relative;
+        }
+        
+        .about_text_iner{
+            position: relative;
+            padding-left: 30px;
+            border-left: 5px solid $btn_bg;
+            margin-top: 19px;
+            margin-bottom: 46px;
+            span{
+                
+            }
+        }
+        .about_btn{
+            margin-top: 70px;
+            @media #{$tab}{
+                margin-top: 20px;
+            }
+            a{
+                margin-right: 36px;
+            }
+            .btn_1{
+                border: 1px solid $border;
+                background-color: transparent;
+                color: #010101;
+                letter-spacing: 1.3px;
+                padding: 18px 40px;
+                &:hover{
+                    background-color: $btn_bg;
+                }
+            }
+        }
+    }
+}
+.single_about_padding{
+    padding-bottom: 140px;
+    @media #{$tab}{
+        padding-bottom: 70px;
+    }
+    @media #{$medium_device}{
+        padding-bottom: 80px;
+    }
+}

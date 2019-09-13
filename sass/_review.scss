@@ -1,0 +1,138 @@
+/**************** review_part css start ****************/
+.review_part {
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-image: url(../img/testimonial.png);
+    background-size: contain;
+    background-position: left;
+    content: "";
+    background-repeat: no-repeat;
+    z-index: -1;
+    @media #{$tab}{
+      display: none;
+    }
+    @media #{$medium_device}{
+
+    }
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: $font_stack_1;
+    margin-bottom: 4px;
+
+    @media #{$small_mobile} {
+      margin-top: 20px;
+    }
+
+    @media #{$large_mobile} {}
+
+    @media #{$tab_device} {}
+
+    @media #{$medium_device} {}
+  }
+
+  .slick-list {
+    padding: 0px !important;
+  }
+
+  .slick_right,
+  .slick_left {
+    display: inline-block !important;
+    position: absolute;
+    top: 55%;
+    color: #dde0e3;
+    @include transform_time(1s);
+
+    &:hover {
+      color: $btn_bg;
+    }
+
+    @media #{$tab_device} {
+      top: 24%;
+    }
+
+    @media #{$medium_device} {
+      top: 50%;
+    }
+  }
+
+  .slick_left {
+    left: -85px;
+
+    @media #{$tab_device} {
+      left: 0px;
+    }
+
+    @media #{$medium_device} {
+      left: -45px;
+
+    }
+  }
+
+  .slick_right {
+    right: -85px;
+
+    @media #{$tab_device} {
+      right: 0px;
+    }
+
+    @media #{$medium_device} {
+      right: -45px;
+    }
+  }
+
+  .client_review_text {
+    p {
+      font-size: 14px;
+      margin: 35px 0 0;
+      font-weight: 300;
+
+      @media #{$small_mobile} {
+        font-size: 16px;
+        margin: 20px 0px 0px;
+      }
+
+      @media #{$large_mobile} {
+        margin: 20px 0px 0px;
+      }
+
+      @media #{$tab_device} {
+        margin: 20px 0px 0px;
+      }
+
+      @media #{$medium_device} {}
+    }
+  }
+
+  .single_slider {
+    background-color: $section_bg;
+    padding: 116px 170px 50px;
+    position: relative;
+    margin-top: 71px;
+    @media #{$tab}{
+      padding: 80px 15px 25px;
+    }
+    @media #{$medium_device}{
+      
+    }
+  }
+
+  .slick-slide img {
+    display: block;
+    margin: 0 auto !important;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -71px;
+  }
+}

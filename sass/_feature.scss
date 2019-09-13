@@ -1,0 +1,120 @@
+/**************** service_part css start ****************/
+.feature_part {
+   position: relative;
+   z-index: 1;
+   @include background("../img/Featured.png");
+   background-size: contain;
+   @media #{$tab}{
+      @include background("");
+   }
+   @media #{$medium_device}{
+   
+   }
+   &:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      @media #{$tab}{
+         display: none;
+      }
+      @media #{$medium_device}{
+      
+      }
+   }
+
+   .single_feature_part {
+      text-align: center;
+      padding: 60px 30px 55px;
+      @include transform_time(.4s);
+      position: relative;
+      z-index: 1;
+      &:after{
+         position: absolute;
+         left: 15%;
+         top: 10%;
+         content: "";
+         background-image: url(../img/single_feature_bg.png);
+         width: 70%;
+         height: 100%;
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: top;
+         opacity: 0;
+         @include transform_time(.4s);
+      }
+      span {
+         font-size: 40px;
+         color: $white_color;
+      }
+
+      h3 {
+         font-size: 24px;
+         text-transform: capitalize;
+         margin: 56px 15px 37px;
+         @include transform_time(.4s);
+      }
+
+      &:hover {
+         background-color: $section_bg;
+         &:after{
+            opacity: 1;
+         }
+      }
+
+   }
+
+   @media #{$small_mobile} {}
+
+   @media #{$large_mobile} {}
+
+   @media #{$tab_device} {}
+
+   @media #{$medium_device} {}
+}
+
+/********** single service *************/
+.single_service {
+   padding: 130px 0 32px;
+
+   .single_single_service {
+      text-align: center;
+      margin-bottom: 95px;
+
+      @media #{$small_mobile} {
+         margin-bottom: 40px;
+      }
+
+      @media #{$large_mobile} {
+         margin-bottom: 40px;
+      }
+
+      @media #{$tab_device} {
+         margin-bottom: 40px;
+      }
+
+      @media #{$medium_device} {}
+
+      h4 {
+         font-size: 22px;
+         margin: 35px 0px 25px;
+
+         @media #{$small_mobile} {
+            margin: 15px 0px 10px;
+         }
+
+         @media #{$large_mobile} {
+            margin: 15px 0px 10px;
+         }
+
+         @media #{$tab_device} {
+            margin: 15px 0px 10px;
+         }
+
+         @media #{$medium_device} {}
+      }
+   }
+}
