@@ -73,11 +73,11 @@
                 <div class="col-lg-6">
                     <div class="banner_text">
                         <div class="banner_text_iner">
-                            <h5  id="txtIts"></h5>
-                            <h1 id="txtReal"></h1>
+                            <h5 class=" wow bounceInLeft" data-wow-delay="0" id="txtIts">It's a</h5>
+                            <h1 class=" wow bounceInLeft" data-wow-delay="0.5s" id="txtReal">REAL HACKATHON</h1>
                             <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt ut
                                 labore et dolore.</p> -->
-                            <div class="banner_btn">
+                            <div  class="banner_btn wow bounceInLeft" data-wow-delay="1s">
                                 <a href="#" class="btn_1">Registrations comming soon</a>
                             </div>
                         </div>
@@ -109,9 +109,9 @@
             <div class="row align-items-center" style="margin-bottom:30px;">
                 <div class="col-lg-12">
                     <div class="divDepImg">
-                            <img src="img/realhack/Kelaniya.png" alt="">
+                            <img class="wow bounceInLeft" src="img/realhack/Kelaniya.png" alt="">
 
-                            <img src="img/realhack/sesa.png" alt="">
+                            <img class="wow bounceInRight" src="img/realhack/sesa.png" alt="">
                     </div>
                 </div>
             </div>
@@ -192,21 +192,21 @@
           <h1 style="font-size: 70px;margin-bottom: 30px;color:#00c783">TIMELINE</h1>
           </div>
         <div class="timeline">
-            <div class="container-c left">
+            <div class="container-c left wow bounceInLeft">
               <div class="content">
                   <h6 class="timelineDate">22 nd SEP</h6>
                 <h2>Team Registrations</h2>
                 <p>Register your team by filling the form supplied </p>
               </div>
             </div>
-            <div class="container-c right">
+            <div class="container-c right wow bounceInRight">
               <div class="content">
                 <h6 class="timelineDate">22 nd SEP</h6>
                 <h2>Pre Hack</h2>
                 <p>All the registered teams should face the pre hack</p>
               </div>
             </div>
-              <div class="container-c left">
+              <div class="container-c left wow bounceInLeft">
               <div class="content">
                   <h6 class="timelineDate">22 nd SEP</h6>
 
@@ -214,7 +214,7 @@
                 <p>Teams which selected to the final hack will be announced</p>
               </div>
             </div>
-              <div class="container-c right">
+              <div class="container-c right wow bounceInRight">
               <div class="content">
                   <h6 class="timelineDate">22 nd SEP</h6>
                 <h2>Grand Hack</h2>
@@ -389,29 +389,26 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/6.0.3/typeit.min.js" ></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
     <script>
-            new TypeIt('#txtAbout', {//We are back to give you a real feeling of a hackathon
-                  speed: 70,
-                  waitUntilVisible: true,
-                  afterComplete: (s)=> {
-                    $("#txtIts").html('');
-                  }
-                }).type('We are back....')
-                  .pause(300)
-                  .break()
-                  .delete()
-                  .break()
-                  .pause(200)
-                  .type('STARTUP BATTLE?')
-                  .pause(500)
-                  .delete()
-                  .type('NO...')
-                  .delete()
-                  .type('REAL ')
-                  .break()
-                  .pause(750)
-                  .type('<strong>HACKATHON</strong>')
-                  .go();
+      new WOW().init();
+
+      new TypeIt('#txtAbout', {//We are back to give you a real feeling of a hackathon
+            speed: 70,
+            waitUntilVisible: true,
+            afterComplete: (s)=> {
+              //$("#txtIts").html('');
+            }
+          }).type('We are back....')
+            .pause(300)
+            .delete(4)
+            .type(' to give you a real feeling of a ')
+            .pause(500)
+            .type('.....')
+            .delete(5)
+            .type('<strong>hackathon</strong>')
+            .go();
 
 
       particlesJS("particles-js", {
