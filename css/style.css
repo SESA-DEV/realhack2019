@@ -20,8 +20,12 @@ footer{
 
 }
 
-.social_icon>a>i{
-  color:#000;
+.social_media>a>i{
+  color:#fff;
+}
+
+.social_media>a{
+  padding: 0 10px;
 }
 
 .p-b-1{
