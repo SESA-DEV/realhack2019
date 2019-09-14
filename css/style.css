@@ -15,6 +15,33 @@
   margin-bottom: 20px;
 }
 
+footer{
+  background: #000;
+
+}
+
+.social_icon>a>i{
+  color:#000;
+}
+
+.p-b-1{
+  color: white;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-family: Roboto,sans-serif,proxima-nova,"Helvetica Neue";
+}
+
+.footerDet{
+  line-height: 25px!important;
+  text-align: left;
+}
+
+.footerContact{
+  margin-left: 2em;
+  display: inline-block;
+  margin-top: -2em;
+}
+
 .award_part{
   position: relative;
   background-image: url(../img/realhack/awardBg.png);
@@ -2898,7 +2925,7 @@ ul {
   width: 100%;
   height: 100%;
   top: 0;
-  background-image: url(../img/About_me.png);
+  background-image: url(../img/realhack/About.png);
   background-size: contain;
   background-position: right;
   content: "";
@@ -3484,7 +3511,7 @@ ul {
   width: 100%;
   height: 100%;
   top: 0;
-  background-image: url(../img/Portfolio.png);
+  /* background-image: url(../img/Portfolio.png); */
   background-size: contain;
   background-position: right;
   content: "";
@@ -5313,7 +5340,7 @@ h6 {
 
 /* line 32, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_footer.scss */
 .footer_part p a {
-  color: #4438b7;
+  color: #fff;
 }
 
 /* line 1, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_breadcrumb.scss */
