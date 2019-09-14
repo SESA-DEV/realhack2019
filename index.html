@@ -73,8 +73,8 @@
                 <div class="col-lg-6">
                     <div class="banner_text">
                         <div class="banner_text_iner">
-                            <h5>It's a</h5>
-                            <h1>REAL HACKATHON</h1>
+                            <h5  id="txtIts"></h5>
+                            <h1 id="txtReal"></h1>
                             <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt ut
                                 labore et dolore.</p> -->
                             <div class="banner_btn">
@@ -98,8 +98,8 @@
             <div class="row justify-content-center" style="    margin-bottom: 15px;                    ">
                 <div class="col-xl-12">
                     <div style="text-align: center" >
-                        <h1 style="font-size: 30px;font-family: monospace;
-                        visibility: visible;">We are back to give you a real feeling of a hackathon</h1>
+                        <h1 id="txtAbout" style="font-size: 30px;font-family: monospace;
+                        visibility: visible;"></h1>
 
                         <p>Organized by Software Engineering Students’ Association | University of Kelaniya</p>
 
@@ -387,67 +387,93 @@
     <script src="js/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/6.0.3/typeit.min.js" ></script>
+
     <script>
+            new TypeIt('#txtAbout', {//We are back to give you a real feeling of a hackathon
+                  speed: 70,
+                  waitUntilVisible: true,
+                  afterComplete: (s)=> {
+                    $("#txtIts").html('');
+                  }
+                }).type('We are back....')
+                  .pause(300)
+                  .break()
+                  .delete()
+                  .break()
+                  .pause(200)
+                  .type('STARTUP BATTLE?')
+                  .pause(500)
+                  .delete()
+                  .type('NO...')
+                  .delete()
+                  .type('REAL ')
+                  .break()
+                  .pause(750)
+                  .type('<strong>HACKATHON</strong>')
+                  .go();
+
+
       particlesJS("particles-js", {
-  particles: {
-    number: { value: 90, density: { enable: true, value_area: 800 } },
-    color: { value: "#fff" },
-    shape: {
-      type: "polygon",
-      stroke: { width: 1, color: "#000000" },
-      polygon: { nb_sides: 3 },
-      image: { src: "img/github.svg", width: 100, height: 100 }
-    },
-    opacity: {
-      value: 0.5,
-      random: true,
-      anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
-    },
-    size: {
-      value: 2,
-      random: true,
-      anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
-    },
-    line_linked: {
-      enable: false,
-      distance: 500,
-      color: "#ffffff",
-      opacity: 0.4,
-      width: 2
-    },
-    move: {
-      enable: true,
-      speed: 1,
-      direction: "right",
-      random: true,
-      straight: false,
-      out_mode: "out",
-      bounce: false,
-      attract: { enable: false, rotateX: 600, rotateY: 20 }
-    }
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: { enable: true, mode: "bubble" },
-      onclick: { enable: true, mode: "repulse" },
-      resize: true
-    },
-    modes: {
-      grab: { distance: 400, line_linked: { opacity: 0.5 } },
-      bubble: {
-        distance: 400,
-        size: 15.984015984015985,
-        duration: 0.3,
-        opacity: 1,
-        speed: 3
-      },
-      repulse: { distance: 271.72827172827175, duration: 0.4 },
-      push: { particles_nb: 4 },
-      remove: { particles_nb: 2 }
-    }
-  },
-  retina_detect: true
+        particles: {
+          number: { value: 90, density: { enable: true, value_area: 800 } },
+          color: { value: "#fff" },
+          shape: {
+            type: "polygon",
+            stroke: { width: 1, color: "#000000" },
+            polygon: { nb_sides: 3 },
+            image: { src: "img/github.svg", width: 100, height: 100 }
+          },
+          opacity: {
+            value: 0.5,
+            random: true,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+          },
+          size: {
+            value: 2,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+          },
+          line_linked: {
+            enable: false,
+            distance: 500,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 2
+          },
+          move: {
+            enable: true,
+            speed: 1,
+            direction: "right",
+            random: true,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 20 }
+          }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "bubble" },
+            onclick: { enable: true, mode: "repulse" },
+            resize: true
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 0.5 } },
+            bubble: {
+              distance: 400,
+              size: 15.984015984015985,
+              duration: 0.3,
+              opacity: 1,
+              speed: 3
+            },
+            repulse: { distance: 271.72827172827175, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 }
+          }
+        },
+        retina_detect: true
 });
 
 
