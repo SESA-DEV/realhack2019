@@ -119,6 +119,11 @@ jQuery(document).ready(function ($) {
     $(".off-canven-menu").removeClass("active")
     $(".offcanvas-overlay").removeClass("active")
   });
+
+  $(".menu").on('click',()=>{
+    $(".off-canven-menu").removeClass("active")
+    $(".offcanvas-overlay").removeClass("active")
+  })
 });
 var client = $('.client_logo');
 if (client.length) {
