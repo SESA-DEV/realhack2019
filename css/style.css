@@ -5,6 +5,8 @@
   background-image: linear-gradient(to right, #00c783 0%, #4138b7 50%, #00c783 100%);
 }
 
+
+
 .imgAwards{
   height: 150px;
 }
@@ -64,6 +66,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 14px;
+  background-color: #ffffff
 }
 
 /* line 11, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
@@ -3153,6 +3156,7 @@ ul {
 .feature_part .single_feature_part span {
   font-size: 40px;
   color: #fff;
+  
 }
 
 /* line 54, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_feature.scss */
@@ -3913,6 +3917,7 @@ ul {
 /* line 50, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_contact.scss */
 .form-contact .form-group {
   margin-bottom: 30px;
+ 
 }
 
 /* line 54, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_contact.scss */
