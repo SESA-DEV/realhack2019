@@ -5619,3 +5619,42 @@ h6 {
 
 }
 
+.ttable_container{
+  width: 100%;
+
+}
+
+ttable td{
+  background-color: #000022;
+}
+
+.table_body{
+
+  margin: 5px;
+  background-color:;
+}
+
+table {
+  border: none;
+  width: 100%;
+  background:transparent;
+
+  
+}
+th{
+  height: 20px;
+  text-align: center;
+}
+td{
+  margin: 5px;
+  text-align: left;
+
+}
+tr{
+
+}
+
+.rule_regulations{
+  height: 100%;
+  
+}
