@@ -5659,3 +5659,35 @@ tr{
   width: 100%;
   
 }
+
+.rule_main{
+  width: 100%;
+  height: auto;
+
+
+
+}
+
+.rule_second{
+
+  float: left;
+  width:50% ;
+  padding: 10px;
+  height: 400px;
+  margin-top: 50px;
+  color: white;
+
+}
+.rule_second p{
+  margin-top: 10px;
+}
+.rule_second h3 {
+  margin-bottom: 50px;
+}
+
+.body_rule h1{
+   text-align: center;
+   color: white;
+   margin-top: 100px;
+   padding-top: 100px;
+}
