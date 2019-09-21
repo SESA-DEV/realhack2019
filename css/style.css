@@ -5,6 +5,8 @@
   background-image: linear-gradient(to right, #00c783 0%, #4138b7 50%, #00c783 100%);
 }
 
+
+
 .imgAwards{
   height: 150px;
 }
@@ -64,6 +66,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 14px;
+  background-color: #ffffff
 }
 
 /* line 11, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
@@ -3153,6 +3156,7 @@ ul {
 .feature_part .single_feature_part span {
   font-size: 40px;
   color: #fff;
+  
 }
 
 /* line 54, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_feature.scss */
@@ -3913,6 +3917,7 @@ ul {
 /* line 50, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_contact.scss */
 .form-contact .form-group {
   margin-bottom: 30px;
+ 
 }
 
 /* line 54, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_contact.scss */
@@ -5582,4 +5587,106 @@ h6 {
   .right {
     left: 0%;
   }
+}
+
+.map-content{
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 400px;
+  margin-top: 50px;
+ 
+  
+}
+
+.map-area{
+  background-color: #b4bfbc;
+
+
+}
+.map-area:after{
+  content:"";
+  display: table;
+  clear: both;
+  
+  width: 100%;
+  height: 50%;
+}
+
+.container-map{
+  width: 100%;
+  height: auto;
+
+}
+
+.ttable_container{
+  width: 100%;
+
+}
+
+ttable td{
+  background-color: #000022;
+}
+
+.table_body{
+
+  margin: 5px;
+  background-color:;
+}
+
+table {
+  border: none;
+  width: 100%;
+  background:transparent;
+
+  
+}
+th{
+  height: 20px;
+  text-align: center;
+}
+td{
+  margin: 5px;
+  text-align: left;
+
+}
+tr{
+
+}
+
+.rule_regulations{
+  height: auto;
+  width: 100%;
+  
+}
+
+.rule_main{
+  width: 100%;
+  height: auto;
+
+
+
+}
+
+.rule_second{
+
+  float: left;
+  width:50% ;
+  padding: 10px;
+  height: 400px;
+  margin-top: 50px;
+  color: white;
+
+}
+.rule_second p{
+  margin-top: 10px;
+}
+.rule_second h3 {
+  margin-bottom: 50px;
+}
+
+.body_rule h1{
+   text-align: center;
+   color: white;
+   margin-top: 50px
 }
