@@ -36,6 +36,31 @@
 </head>
 
 <body style=>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v4.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="235087650506664"
+        theme_color="#20cef5">
+    </div>
+
     <!--::header part start::-->
     <header class="main_menu home_menu">
         <div class="container">
@@ -62,8 +87,8 @@
                                         <li><a class="menu" href="#timeline">timeline</a></li>
                                         <li><a class="menu" href="#awards">awards</a></li>
                                         <li><a class="menu" href="#gallery">gallery</a></li>
-                                        <li><a class="menu" href="#rule&regulations">RULES & REGULATIONS</a></li>
-                                        <li><a class="menu" href="#sponsors">Sponsors</a></li>
+                                        <!-- <li><a class="menu" href="#rule&regulations">RULES & REGULATIONS</a></li> -->
+                                        <!-- <li><a class="menu" href="#sponsors">Sponsors</a></li> -->
                                         <li><a class="menu" href="#contact_us">Contact Us</a></li>
                                        
                                         
@@ -197,7 +222,7 @@
                         <div class="single_feature_part">
                             <img class="imgIcon" src="img/icon/247.png" alt="">
                             <h3 class="aboutH3 pixelFont">Overnight</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
+                            <p>To the ones who don't have much differance between day & night</p>
                         </div>
                     </div>
                 </div>
