@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#pot>img{position: absolute;
+    top: 0;
+    -webkit-animation: left-to-right 24s linear infinite;
+    animation: left-to-right 24s linear infinite;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: run;
+}     
+@-webkit-keyframes run {
+    0% {
+    left: 20%;
+}
+    100%{ left: 100%;}
+}
+</style>
+</head>
+<body>
+    <div style="    position: relative;
+    width: 100%;">
+
+        <div id = "pot">
+            <img src = "img/realhack/logo-pixelate.png">
+            </div>
+    </div>
+
+</body>
+</html>

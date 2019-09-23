@@ -5,14 +5,56 @@
   background-image: linear-gradient(to right, #00c783 0%, #4138b7 50%, #00c783 100%);
 }
 
+.mobileSanda{
+  display: none;
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+  transform: rotate(-90deg);
+  float: right;
+  margin-right: -220px;
+    margin-top: -100px;
+    width: 250px;
+    opacity: 0.2;
+}
 
+#divAnimation{
+  position: absolute;
+  width: 100%;
+
+
+}
+
+#divAnimation>img{
+  float: right;
+}
+
+#txtReal{
+  font-family: 'Press Start 2P', cursive;
+  color: #ff00db;
+  margin-bottom: 64px;
+  text-shadow: 5px 5px #551a8b;
+}
 
 .imgAwards{
   height: 150px;
 }
 
+.imgIcon{
+  height: 40px;
+}
+
+.fontsize-20{
+  font-size: 20px;
+}
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
 .txtPrice{
-  font-size: 44px;
+  font-size: 30px;
   font-weight: 800;
   margin-bottom: 20px;
 }
@@ -34,7 +76,7 @@ footer{
   color: white;
   font-size: 20px;
   padding-bottom: 10px;
-  font-family: Roboto,sans-serif,proxima-nova,"Helvetica Neue";
+  /* font-family: Roboto,sans-serif,proxima-nova,"Helvetica Neue"; */
 }
 
 .footerDet{
@@ -62,7 +104,8 @@ footer{
 /**************** common css start ****************/
 /* line 4, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
 body {
-  /* font-family: "Poppins", sans-serif; */
+  /* font-family: 'Press Start 2P', cursive!important; */
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 14px;
@@ -108,10 +151,34 @@ input:focus {
   padding: 95px 0px;
 }
 
+@media (min-width: 991px){
+  .otherplaces{
+    margin-top:50px;
+  }
+}
+@media  (min-width: 1500px) {
+  #divAnimation>img{
+    width: 700px;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width:1200px) and (max-width: 1500px) {
+  #divAnimation>img{
+    width: 600px;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+}
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
   .section_padding {
     padding: 80px 0px;
+  }
+
+  #divAnimation>img{
+    width: 500px;
   }
 }
 
@@ -120,6 +187,10 @@ input:focus {
   .section_padding {
     padding: 70px 0px;
   }
+
+  #divAnimation>img{
+    margin-right:-250px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -127,6 +198,20 @@ input:focus {
   .section_padding {
     padding: 70px 0px;
   }
+
+  #divAnimation{
+    display: none;
+    /* position: fixed;
+    text-align: center; */
+  }
+  
+  .mobileSanda{
+    display: block;
+  }
+/* 
+  #divAnimation>img{
+    float: left;
+  } */
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -134,6 +219,12 @@ input:focus {
   .section_padding {
     padding: 70px 0px;
   }
+
+  #divAnimation{
+    display: none;
+  }
+
+
 }
 
 /* line 59, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
@@ -262,9 +353,9 @@ h6 {
 
 /* line 140, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
 p {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   line-height: 1.8;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 0px;
   color: #888888;
   font-weight: 300;
@@ -405,7 +496,7 @@ button:focus,
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 211, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
   .section_tittle h2 {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 40px;
     margin-bottom: 15px;
   }
@@ -1408,7 +1499,7 @@ ul {
 @media (min-width: 768px) {
   /* line 618, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_blog.scss */
   .blog_item_img .blog_item_date h3 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -2591,6 +2682,7 @@ ul {
 .banner_part {
   height: 1000px;
   position: relative;
+  /* background-color: #041414; */
   background-image: url(../img/realhack/topbg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -2756,7 +2848,7 @@ ul {
 .banner_part .banner_text h5 {
   color: #8782ce;
   font-size: 25px;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   margin-bottom: -10px;
 }
 
@@ -2769,7 +2861,7 @@ ul {
 
 /* line 117, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_banner.scss */
 .banner_part .banner_text h1 {
-  font-size: 100px;
+  font-size: 60px;
   margin-bottom: 30px;
   line-height: 1.273;
   color: #1f1b1b;
@@ -3016,7 +3108,7 @@ ul {
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
   /* line 54, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_about.scss */
   .about_part .about_text h2 {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
 }
@@ -3326,7 +3418,7 @@ ul {
 
 /* line 61, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_skil_part.scss */
 .skil_part .skil_text .single_skil p {
-  font-family: "Anton", sans-serif;
+  /* font-family: "Anton", sans-serif; */
   position: absolute;
   bottom: 15px;
 }
@@ -3417,7 +3509,7 @@ ul {
 
 /* line 17, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_cta_area.scss */
 .cta_area .our_expesience p {
-  font-family: "Anton", sans-serif;
+  /* font-family: "Anton", sans-serif; */
   font-size: 15px;
   line-height: 13px;
 }
@@ -3723,7 +3815,7 @@ ul {
 .review_part h3 {
   font-size: 22px;
   font-weight: 500;
-  font-family: "Anton", sans-serif;
+  /* font-family: "Anton", sans-serif; */
   margin-bottom: 4px;
 }
 
@@ -5450,7 +5542,7 @@ h6 {
 
 
 
-/* ---- reset ---- */ body{  } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%;  background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+/* ---- reset ---- */ body{  } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%;  background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px;  font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
 /*# sourceMappingURL=style.css.map */
 
 /* The actual timeline (the vertical ruler) */
