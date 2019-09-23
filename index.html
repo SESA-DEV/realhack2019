@@ -29,6 +29,8 @@
 
     <link rel="stylesheet" href="css/wave_animation.css">
     <link rel="stylesheet" href="css/rule&regulation_background.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     
 </head>
 
@@ -80,16 +82,20 @@
                 <div class="col-lg-6">
                     <div class="banner_text">
                         <div class="banner_text_iner">
-                            <h5 class=" wow bounceInLeft" data-wow-delay="0" id="txtIts">It's a</h5>
+                            <h5 class=" wow bounceInLeft pixelFont" data-wow-delay="0" id="txtIts">It's a</h5>
                             <h1 class=" wow bounceInLeft" data-wow-delay="0.5s" id="txtReal">REAL HACKATHON</h1>
                             <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt ut
                                 labore et dolore.</p> -->
                             <div  class="banner_btn wow bounceInLeft" data-wow-delay="1s">
-                                <a href="#" class="btn_1">Registrations comming soon</a>
+                                <a href="#" class="btn_1 pixelFont">Registrations coming soon</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+                    <div id="testDiv"></div>
+
             </div>
         </div>
     </section>
@@ -106,9 +112,9 @@
                 <div class="col-xl-12">
                     <div style="text-align: center" >
                         <h1 id="txtAbout" style="font-size: 30px;font-family: monospace;
-                        visibility: visible;"></h1>
+                        visibility: visible;" class="pixelFont"></h1>
 
-                        <p>Organized by Software Engineering Students’ Association | University of Kelaniya</p>
+                        <p class="">Organized by Software Engineering Students’ Association | University of Kelaniya</p>
 
                     </div>
                 </div>
@@ -123,19 +129,23 @@
                 </div>
             </div>
 
-            <div style="position:absolute;padding-top:20px;width: 80%;text-align: right;">
-              <img style="height:150px" src="img/realhack/sanda.png" alt="">
-              <img style="height:150px" src="img/realhack/sanda.png" alt="">
-              <img style="height:150px" src="img/realhack/sanda.png" alt="">
-              <img style="height:150px" src="img/realhack/sanda.png" alt="">
-              <img style="height:150px" src="img/realhack/sanda.png" alt="">
+            <div style="position:absolute;padding-top:20px;width:75%;text-align: right;">
+              <img style="height:150px" src="img/realhack/pixelate-sanda.png" alt="">
+              <img style="height:150px" src="img/realhack/pixelate-sanda.png" alt="">
+              <img style="height:150px" src="img/realhack/pixelate-sanda.png" alt="">
+              <img style="height:150px" src="img/realhack/pixelate-sanda.png" alt="">
+              <img style="height:150px" src="img/realhack/pixelate-sanda.png" alt="">
             </div>
         </div>
+
     </section>
   </div>
   <!--::our client part end::-->
     <!--::about part start::-->
-    <section id="about" class="about_part padding_bottom">
+    <section id="about" style="padding-top:10px" class="about_part padding_bottom">
+
+
+
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md-5">
@@ -145,8 +155,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="about_text">
-                        <h2 style="font-size: 70px;margin-bottom: 30px;color:#fff">REALHACK?</h2>
-                        <div class="about_text_iner">
+                        <h2 class="pixelFont" style="font-size: 40px;margin-bottom: 30px;color:#fff">REALHACK?</h2>
+                        <div class="about_text_iner pixelFont">
                             <p> <span>RealHack is the utmost venture initiated by Software Engineering students of
                               University of Kelaniya in 2018. 
                               It is a 24-hour coding competition, open to all University students island-wide and is
@@ -164,26 +174,26 @@
                 </div>
 
                 <div class="col-md-12">
-                  <div class="row align-items-center">
-                    <div class="col-lg-4 col-sm-6">
+                  <div class="row">
+                    <div class="col-lg-4 col-sm-6 ">
                         <div class="single_feature_part">
-                            <img src="img/icon/programming.png" alt="">
-                            <h3 class="aboutH3">Programming</h3>
+                            <img class="imgIcon" src="img/icon/programming.png" alt="">
+                            <h3 class="aboutH3 pixelFont">Programming</h3>
                             <p>To the passionate programmers who acquire skills through practice, RealHack is
                                 the place to be.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6 ">
                         <div class="single_feature_part">
-                            <img src="img/icon/design.png" alt="">
-                            <h3 class="aboutH3">Design</h3>
+                            <img class="imgIcon" src="img/icon/design.png" alt="">
+                            <h3 class="aboutH3 pixelFont">Design</h3>
                             <p>RealHack is for the designers that can visualise thinking.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6 ">
                         <div class="single_feature_part">
-                            <img src="img/icon/247.png" alt="">
-                            <h3 class="aboutH3">Latest instoment</h3>
+                            <img class="imgIcon" src="img/icon/247.png" alt="">
+                            <h3 class="aboutH3 pixelFont">Overnight</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
                         </div>
                     </div>
@@ -195,22 +205,22 @@
     <!--::about part end::-->
 
     <!-- TIMELINE part start-->
-    <section id="timeline" class="feature_part section_padding" style="  background-color: #000000;font-family: Helvetica, sans-serif;">
+    <section id="timeline" class="feature_part section_padding" style="  background-color: #000000;">
         <div class="container">
-          <h1 class="wow bounceInLeft" style="font-size: 70px;margin-bottom: 30px;color:#00c783">TIMELINE</h1>
+          <h1 class="wow bounceInLeft pixelFont" style="font-size: 40px;margin-bottom: 30px;color:#00c783">TIMELINE</h1>
           </div>
         <div class="timeline">
             <div class="container-c left wow bounceInLeft">
               <div class="content">
                   <h6 class="timelineDate">22 nd SEP</h6>
-                <h2>Team Registrations</h2>
+                <h2 class="fontsize-20">Team Registrations</h2>
                 <p>Register your team by filling the form supplied </p>
               </div>
             </div>
             <div class="container-c right wow bounceInRight">
               <div class="content">
                 <h6 class="timelineDate">22 nd SEP</h6>
-                <h2>Pre Hack</h2>
+                <h2 class="fontsize-20">Pre Hack</h2>
                 <p>All the registered teams should face the pre hack</p>
               </div>
             </div>
@@ -218,14 +228,14 @@
               <div class="content">
                   <h6 class="timelineDate">22 nd SEP</h6>
 
-                <h2>Anouncement of finalists</h2>
+                <h2 class="fontsize-20">Anouncement of finalists</h2>
                 <p>Teams which selected to the final hack will be announced</p>
               </div>
             </div>
               <div class="container-c right wow bounceInRight">
               <div class="content">
                   <h6 class="timelineDate">22 nd SEP</h6>
-                <h2>Grand Hack</h2>
+                <h2 class="fontsize-20">Grand Hack</h2>
                 <p>All the contestants will be finding answer for a given problem scenario</p>
               </div>
             </div>
@@ -242,7 +252,7 @@
       <div class="container">
         <div style="width:100%">
 
-          <h1 style="font-size: 70px;margin-bottom: 30px;color:rgb(233, 157, 35);display: inline;">AWARDS</h1>
+          <h1 style="font-size: 40px;margin-bottom: 30px;color:rgb(233, 157, 35);display: inline;">AWARDS</h1>
           <img style="height:100px;float: right;" src="img/realhack/santa/king.png" alt="">
         </div>
         <div class="row">
@@ -253,7 +263,7 @@
 
           <div class="col-lg-4 wow slideInUp" data-wow-delay="0" style="text-align:center;">
               <img style="height:190px" class="imgAwards" src="img/realhack/awards/gold.png" alt="">
-            <p style="color:#FFD400;font-size: 45px;" class="txtPrice">LKR 80000</p>
+            <p style="color:#FFD400;font-size: 35px;" class="txtPrice">LKR 80000</p>
           </div>
 
           <div class="col-lg-4 wow slideInUp" data-wow-delay="0.7s" style="text-align:center;">
@@ -273,9 +283,9 @@
         </div>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-5">
+                <div class="col-xl-10">
                     <div class="text-center">
-                        <h2 style="font-size: 70px;margin-bottom: 30px;color:#2DA1E7">REALHACK 1.0</h2>
+                        <h2 style="font-size: 40px;margin-bottom: 30px;color:#2DA1E7">REALHACK 1.0</h2>
                     </div>
                 </div>
             </div>
@@ -321,234 +331,6 @@
         
     </section>
     <!-- gallery_part part end-->
-
-
- <!--::Rule part start::-->
- <section id="rule&regulations" class="rule_regulations">
-
-    
-
-
-    <div class="body_rule">
-
-
-        <h1>  TAKE A LOOK AT <strong>Rules & Regulations</strong>  </h1>
-        <div class="rule_main" style="overflow-x:auto">
-    
-          <div class="rule_second">
-              <h3>Registration</h3>
-    
-              
-                      <p>Entrants are allowed to have their own idea/topic of their innovation suggested in this form.</p>
-                  
-                      <p>Entrants should start developing the application from scratch in the entry period.</p>
-                  
-                      <p>Entries may not contain any elements, which are subject to third party rights, in particular copyrights, other than elements owned by the entrant.</p>
-                      
-                     <p> Any elements that appear in the Entry must be entirely original, created by the entrant, or be in the public domain.</p>
-                      
-                  
-                      <p>Entrants should develop a Desktop, Mobile or Web Application using Any Software Platform/s available.</p>
-                  
-                      <p>Entrants will be responsible for bringing their own PC to build apps.</p>
-                  
-    
-          </div>
-          <div class="rule_second">
-             <h3>Requirements for Entries</h3> 
-    
-              
-              
-                     <p>Hackathon participants must be registered in a university to be eligible to register and take part in the Hackathon.</p> 
-                  
-                      <p>Participants should register for the Hackathon on-line to be eligible (Register).</p>
-                  
-                      
-                      <p>Groups of up to 5 undergraduate students per team will compete in the Hackathon.</p>
-                  
-                      
-                      <p>10 teams will be selected by a panel, based on the form filled by the applicant.</p>
-                  
-    
-          </div>
-          
-    
-        </div>
-      
-       
-          
-
-    </div>
- 
-       
-            
-        
-         
-   
-</section>
-<!--::Rule part end::-->
-
-
-
-
-
-
-
-     <!-- contact us part start-->
-     <section id="contact_us" class="gallery_part section_padding">
-        <div class="background">
-
-              <!-- Background wave animation start-->
-                <div class="waveWrapper waveAnimation">
-
-                    
-                        <div class="waveWrapperInner bgTop">
-                          <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
-                        </div>
-                        <div class="waveWrapperInner bgMiddle">
-                          <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
-                        </div>
-                        <div class="waveWrapperInner bgBottom">
-                          <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
-                        </div>
-                      </div>
-
-                      <!-- Background wave animation end-->
-
-
-                <div class="container-map">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-5">
-                                <div class="text-center">
-                                    <h2 style="font-size: 50px;margin-bottom: 30px;color:#2DA1E7"> EVENT DETAILS </h2>
-                                </div>
-                            </div>
-                        </div>
-                        
-                
-                  <!-- start Google map  University of kelaniya-->
-
-
-                  <div class="map-area">
-
-
-
-                  <div class="map-content">
-
-                      <div class="mapouter" style="position: relative">
-                          <div class="gmap_canvas">
-                                <iframe width="900" height="335" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20kelaniya&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                                 </iframe>
-                            
-                        </div>
-                        <style>
-                                .mapouter{
-                                    
-                                    overflow:hidden;
-                                     padding-bottom:56.25%;
-                                     position:relative;
-                                     height:0;
-
-    
-                                }
-                                .gmap_canvas {overflow:hidden;background:none!important;height:335px;width:100%;}
-                        </style>
-                        </div>
-
-                  </div>  <!-- /div  map-content-->
-
-                  <div class="map-content">
-
-
-                    <h1>Agenda</h1>
-                    <ul>
-                      <li>0930H – 1000H - Registration</li>
-                      <li>1000H – 1030H - Ice Breaker Session</li>
-                      <li>1030H – 1530H - Developing App</li>
-                      <li>1530H – 1600H - Refreshments</li>
-                      <li>1600H – 1800H - Demonstration</li>
-                    </ul>
-
-
-                  </div>  <!-- /div  map-content-->
-
-
-
-                  </div> <!-- /div map-area -->
-                 
-                    <!--End Google map  University of kelaniya-->
-            
-                    <br>
-                    <br>
-            
-            
-            
-                  <div class="row">
-                    <div class="col-12">
-                      <h2 class="contact-title">Get in Touch</h2>
-                    </div>
-                    <div class="col-lg-8">
-                      <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
-                        novalidate="novalidate">
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="form-group">
-            
-                              <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"
-                                placeholder='Enter Message' style=" font-stretch: bold;" ></textarea>
-                            </div>
-                          </div>
-                          <div class="col-sm-6">
-                            <div class="form-group">
-                              <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = 'Enter your name'" placeholder='Enter your name'>
-                            </div>
-                          </div>
-                          <div class="col-sm-6">
-                            <div class="form-group">
-                              <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = 'Enter email address'" placeholder='Enter email address'>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <div class="form-group">
-                              <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = 'Enter Subject'" placeholder='Enter Subject'>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group mt-3">
-                          <button type="submit" class="button button-contactForm btn_4">Send Message</button>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-location-pin"></i></span>
-                        <div class="media-body">
-                          <h3>University of Kelaniya.</h3>
-                          <p>Sri Lanka</p>
-                        </div>
-                      </div>
-                      <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                        <div class="media-body">
-                          <h3>00 (440) 9865 562</h3>
-                          <p>Mon to Fri 9am to 6pm</p>
-                        </div>
-                      </div>
-                      <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-email"></i></span>
-                        <div class="media-body">
-                          <h3>support@colorlib.com</h3>
-                          <p>Send us your query anytime!</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
             
                  </div>
 
@@ -560,7 +342,7 @@
     <!-- contact_us part end-->
 
     <!--::footer part start::-->
-    <footer id="footer" class="footer_part">
+    <footer id="footer" class="footer_part" style="font-size:12px;">
         <div class="container">
             <div class="row justigy-content-center">
                 <div class="col-lg-12">
@@ -570,15 +352,15 @@
                             <div class="row">
                                 <div class="about col-md-4">
                                     <h5 class="p-b-1">About Us</h5>
-                                    <img class="responsive-img logo" src="img/realhack/logo-bw.png" alt="logo image">
+                                    <img style="max-height:80px;" class="responsive-img logo" src="img/realhack/logo-bw.png" alt="logo image">
                                     <br>
-                                    <p class="footerDet">Inter-University Hackathon Organized by Software Engineering Students' Association and IEEE
+                                    <p class="footerDet" style="font-size:12px;">Inter-University Hackathon Organized by Software Engineering Students' Association and IEEE
                                         Student Branch of University of Kelaniya.</p>
                                 </div>
             
                                 <div class="news col-md-5">
                                     <h5 class="p-b-1">Contact</h5>
-                                    <p class="footerDet">
+                                    <p class="footerDet" style="font-size:12px;">
                                         <i class="fa fa-map-marker"></i>
                                         <span class="footerContact" style="">Software Engineering Students' Association, University of Kelaniya.</span><br>
                                         <i class="fa fa-phone"></i>
