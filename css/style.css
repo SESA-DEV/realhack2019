@@ -9,6 +9,16 @@
   font-family: 'Press Start 2P', cursive!important;
 }
 
+#divAnimation{
+  position: absolute;
+  width: 100%;
+
+}
+
+#divAnimation>img{
+  float: right;
+}
+
 #txtReal{
   font-family: 'Press Start 2P', cursive;
   color: #ff00db;
@@ -131,11 +141,29 @@ input:focus {
 .section_padding {
   padding: 95px 0px;
 }
+@media  (min-width: 1500px) {
+  #divAnimation>img{
+    width: 700px;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+}
 
+@media only screen and (min-width:1200px) and (max-width: 1500px) {
+  #divAnimation>img{
+    width: 600px;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+}
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
   .section_padding {
     padding: 80px 0px;
+  }
+
+  #divAnimation>img{
+    width: 500px;
   }
 }
 
@@ -144,6 +172,10 @@ input:focus {
   .section_padding {
     padding: 70px 0px;
   }
+
+  #divAnimation>img{
+    margin-right:-250px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -151,6 +183,16 @@ input:focus {
   .section_padding {
     padding: 70px 0px;
   }
+
+  #divAnimation{
+    display: none;
+    /* position: fixed;
+    text-align: center; */
+  }
+/* 
+  #divAnimation>img{
+    float: left;
+  } */
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -158,6 +200,12 @@ input:focus {
   .section_padding {
     padding: 70px 0px;
   }
+
+  #divAnimation{
+    display: none;
+  }
+
+
 }
 
 /* line 59, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
@@ -2615,8 +2663,8 @@ ul {
 .banner_part {
   height: 1000px;
   position: relative;
-  background-color: #041414;
-  /* background-image: url(../img/realhack/topbg.png); */
+  /* background-color: #041414; */
+  background-image: url(../img/realhack/topbg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
