@@ -5,13 +5,22 @@
   background-image: linear-gradient(to right, #00c783 0%, #4138b7 50%, #00c783 100%);
 }
 
-.pixelFont{
-  font-family: 'Press Start 2P', cursive!important;
+.mobileSanda{
+  display: none;
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+  transform: rotate(-90deg);
+  float: right;
+  margin-right: -220px;
+    margin-top: -100px;
+    width: 250px;
+    opacity: 0.2;
 }
 
 #divAnimation{
   position: absolute;
   width: 100%;
+
 
 }
 
@@ -95,8 +104,8 @@ footer{
 /**************** common css start ****************/
 /* line 4, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
 body {
-  font-family: 'Press Start 2P', cursive!important;
-  /* font-family: "Poppins", sans-serif; */
+  /* font-family: 'Press Start 2P', cursive!important; */
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 14px;
@@ -140,6 +149,12 @@ input:focus {
 /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
 .section_padding {
   padding: 95px 0px;
+}
+
+@media (min-width: 991px){
+  .otherplaces{
+    margin-top:50px;
+  }
 }
 @media  (min-width: 1500px) {
   #divAnimation>img{
@@ -188,6 +203,10 @@ input:focus {
     display: none;
     /* position: fixed;
     text-align: center; */
+  }
+  
+  .mobileSanda{
+    display: block;
   }
 /* 
   #divAnimation>img{
@@ -329,7 +348,7 @@ h4,
 h5,
 h6 {
   color: #1f1b1b;
-  /* font-family: "Anton", sans-serif; */
+  font-family: "Anton", sans-serif;
 }
 
 /* line 140, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
