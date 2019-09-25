@@ -50,8 +50,13 @@
     var window_top = $(window).scrollTop() + 1;
     if (window_top > 50) {
       $('.home_menu').addClass('home_menu_fixed animated fadeInDown');
+      $('.iconbg').css('display','none');
+      $('.main_menu .menu-trigger span').css('background','#000000')
     } else {
       $('.home_menu').removeClass('home_menu_fixed animated fadeInDown');
+      $('.iconbg').css('display','block');
+      $('.main_menu .menu-trigger span').css('background','#ffffff')
+
     }
   });
 

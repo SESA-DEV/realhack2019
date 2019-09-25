@@ -1,6 +1,113 @@
 /**************** extend css start ****************/
 @import url("https://fonts.googleapis.com/css?family=Anton|Poppins:300,400,500,600,700&display=swap");
 /* line 6, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_extends.scss */
+
+.iconbg{
+  position: absolute;
+  margin-top:-200px;
+  margin-left:-100px;
+  width:300px;
+}
+
+.coversection{
+  position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 250px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #00bbce;
+}
+
+.covercontainer {
+  position: relative;
+  z-index: 20;
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 80px;
+  padding-bottom: 0;
+  padding-left: 80px;
+  font-family: 'Mont',sans-serif!important;
+}
+
+.coverheader{
+  margin-bottom: .5em;
+  color: #fff;
+  line-height: 1.3;
+  font-weight: 300;
+  align-self: start;
+  font-size: 2em;
+  font-family: 'Mont',sans-serif;
+}
+
+.covercaption{
+  color: #fff;
+  font-size: 9em;
+  line-height: .8;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  font-family: 'Mont',sans-serif;
+}
+
+.coverbuttondiv{
+  display: block;
+    max-width: 960px;
+    margin-top: 48px;
+    margin-bottom: 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #fff;
+}
+
+.coverbutton{
+  display: inline-block;
+  min-height: 65px;
+  padding: 28px 40px 27px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  font-size: .9em;
+  line-height: 1;
+  font-weight: 700;
+  font-family: 'Mont',sans-serif!important;
+  letter-spacing: .2em;
+    text-transform: uppercase;
+  
+}
+
+.w-button {
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+
 .btn_1 {
   background-image: linear-gradient(to right, #00c783 0%, #4138b7 50%, #00c783 100%);
 }
@@ -191,6 +298,25 @@ input:focus {
   #divAnimation>img{
     margin-right:-250px;
   }
+
+  .coversection{
+    padding-top: 200px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .coverheader{
+    font-size: 1.5em;
+  }
+
+  .covercaption{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -10px;
+    font-size: 5em;
+  }
 }
 
 @media (max-width: 575px) {
@@ -208,10 +334,41 @@ input:focus {
   .mobileSanda{
     display: block;
   }
-/* 
-  #divAnimation>img{
-    float: left;
-  } */
+
+  .coversection{
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+
+  .covercontainer{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .coverheader{
+    font-size: 1.2em;
+  }
+
+  .covercaption{
+    margin-left: -4px;
+    font-size: 3.5em;
+    line-height: .9;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .coverbuttondiv{
+    margin-top: 30px;
+  }
+
+  .coverbutton{
+    min-height: 50px;
+    /* padding: 21px 24px 20px; */
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -222,6 +379,50 @@ input:focus {
 
   #divAnimation{
     display: none;
+  }
+
+  .coversection{
+    padding-top: 150px;
+    padding-bottom: 0;
+  }
+
+  .covercontainer{
+    position: relative;
+    z-index: 20;
+    display: block;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 80px;
+    padding-bottom: 0;
+    padding-left: 80px;
+  }
+
+  .coverheader{
+    margin-left: -2px;
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+
+  .covercaption{
+    margin-left: -7px;
+    line-height: .9;
+    font-size: 5em;
+  }
+
+  .coverbuttondiv{
+    margin-top: 30px;
+  }
+
+  .coverbutton{
+    min-height: 50px;
+    padding: 21px 24px 20px;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 
 
@@ -2408,7 +2609,7 @@ ul {
 .main_menu .menu-trigger span {
   display: block;
   height: 2px;
-  background: #1f1b1b;
+  background: #ffffff;
   transition: 0.5s;
 }
 
@@ -2978,7 +3179,7 @@ ul {
 /**************** about css start ****************/
 /* line 2, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_about.scss */
 .about_part {
-  background: #303739;
+  background: #002527;
   position: relative;
   z-index: 1;
 }
