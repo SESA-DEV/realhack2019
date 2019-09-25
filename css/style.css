@@ -9,6 +9,12 @@
   width:300px;
 }
 
+#priceSanda{
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  -webkit-transform: rotate(-20deg); /* Safari 3-8 */
+  transform: rotate(-20deg);
+}
+
 .coversection{
   position: relative;
     z-index: 1;
@@ -269,6 +275,10 @@ input:focus {
     margin-right: 50px;
     margin-top: 50px;
   }
+
+  #priceSanda{
+    display: none;
+  }
 }
 
 @media only screen and (min-width:1200px) and (max-width: 1500px) {
@@ -276,6 +286,12 @@ input:focus {
     width: 600px;
     margin-right: 50px;
     margin-top: 50px;
+  }
+
+  #priceSanda{
+    height: 300px;
+    float: right;
+    margin-right: -150px;
   }
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
@@ -287,12 +303,25 @@ input:focus {
   #divAnimation>img{
     width: 500px;
   }
+
+  #priceSanda{
+    height: 300px;
+    float: right;
+    margin-right: -100px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
   .section_padding {
     padding: 70px 0px;
+  }
+
+  #priceSanda{
+    height: 500px;
+    float: right;
+    margin-right: -200px;
+    margin-top: 12em;
   }
 
   #divAnimation>img{
@@ -319,62 +348,18 @@ input:focus {
   }
 }
 
-@media (max-width: 575px) {
-  /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
-  .section_padding {
-    padding: 70px 0px;
-  }
-
-  #divAnimation{
-    display: none;
-    /* position: fixed;
-    text-align: center; */
-  }
-  
-  .mobileSanda{
-    display: block;
-  }
-
-  .coversection{
-    padding-top: 120px;
-    padding-bottom: 0;
-  }
-
-  .covercontainer{
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-  .coverheader{
-    font-size: 1.2em;
-  }
-
-  .covercaption{
-    margin-left: -4px;
-    font-size: 3.5em;
-    line-height: .9;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .coverbuttondiv{
-    margin-top: 30px;
-  }
-
-  .coverbutton{
-    min-height: 50px;
-    /* padding: 21px 24px 20px; */
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-  }
-}
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
   .section_padding {
     padding: 70px 0px;
+  }
+
+  #priceSanda{
+    height: 500px;
+    float: right;
+    margin-right: -200px;
+    margin-top: 15em;
   }
 
   #divAnimation{
@@ -428,6 +413,64 @@ input:focus {
 
 }
 
+@media (max-width: 575px) {
+  /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
+  .section_padding {
+    padding: 70px 0px;
+  }
+
+  #priceSanda{
+    height: 500px;
+    float: right;
+    margin-right: -200px;
+    margin-top: 12em;
+  }
+
+  #divAnimation{
+    display: none;
+    /* position: fixed;
+    text-align: center; */
+  }
+  
+  .mobileSanda{
+    display: block;
+  }
+
+  .coversection{
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+
+  .covercontainer{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .coverheader{
+    font-size: 1.2em;
+  }
+
+  .covercaption{
+    margin-left: -4px;
+    font-size: 3.5em;
+    line-height: .9;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .coverbuttondiv{
+    margin-top: 30px;
+  }
+
+  .coverbutton{
+    min-height: 50px;
+    /* padding: 21px 24px 20px; */
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+}
 /* line 59, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
 .single_padding_top {
   padding-top: 140px !important;
