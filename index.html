@@ -413,22 +413,23 @@
                                 style="font-size: 50px;margin-bottom: 30px;margin-left: 10px; color: #ffffff;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
                                 HAVE SOME QUESTIONS?
                             </h1>
-    
-                            <div class="divContactField">
-                                <input type="text" placeholder="Name" class="contactInput">
-                            </div>
-                
-                            <div class="divContactField">
-                                <input type="email" placeholder="Email Address" class="contactInput">
-                            </div>
-                
-                            <div class="divContactField">
-                                <textarea style="height:80px;" placeholder="Message" name="" id="" cols="30" rows="5" class="contactInput"></textarea>
-                            </div>
-    
-                            <div class="dviContactField">
-                                <input type="submit" value="Ask.." class="contactSubmit">
-                            </div>
+                            <form action="contact_process.php" method="post">
+                                <div class="divContactField">
+                                    <input type="text" name="name" placeholder="Name" class="contactInput">
+                                </div>
+                    
+                                <div class="divContactField">
+                                    <input type="email" name="email" placeholder="Email Address" class="contactInput">
+                                </div>
+                    
+                                <div class="divContactField">
+                                    <textarea style="height:80px;" name="message" placeholder="Message" name="" id="" cols="30" rows="5" class="contactInput"></textarea>
+                                </div>
+        
+                                <div class="dviContactField">
+                                    <input type="submit" value="Ask.." class="contactSubmit">
+                                </div>
+                            </form>
                         </div>
                         <div class="col-lg-2"></div>
 
