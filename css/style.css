@@ -3234,6 +3234,49 @@ ul {
   color:#ffffff;
 }
 
+.contactInput{
+  height: 50px;
+  padding-top: 9px;
+  padding-left: 20px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  border-style: none;
+  border-radius: 0;
+  font-size: 19.2px;
+
+  display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 1.42857143;
+    color: #333;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.contactSubmit{
+  display: inline-block;
+  background-color: #000;
+    padding: 20px 30px 40px;
+    align-self: start;
+    color: #fff;
+    font-size: .75em;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+    border: 0;
+    width:100%;
+    font-size: 19.2px;
+    height:50px;
+    text-align: center;
+}
+
 @media (max-width: 991px) {
   /* line 2, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_about.scss */
   .about_part {
