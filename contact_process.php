@@ -1,6 +1,6 @@
 <?php
 
-    $to = "dilushadasanayaka@gmail.com";
+    $to = "info@realhack.info";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $cmessage = $_REQUEST['message'];
@@ -13,7 +13,7 @@
 
     $subject = "You have a message from your Bitmap Photography.";
 
-    $logo = 'img/logo.png';
+    $logo = 'img/realhack/logo.png';
     $link = '#';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
@@ -29,6 +29,12 @@
 	$body .= "</tbody></table>";
 	$body .= "</body></html>";
 
-    $send = mail($to, 'test', $body, $headers);
+	$subject = "realhack contact us";
 
+	if(@mail($to, $subject, $body, $headers))
+	{
+	echo "1";
+	}else{
+	echo "2";
+	}
 ?>
