@@ -384,6 +384,11 @@ input:focus {
     margin-top:-250px;
     width:800px;
   }
+
+  .rulesRound{
+    margin: 30% 25%;
+    width:60%;
+  }
 }
 
 @media only screen and (min-width:1200px) and (max-width: 1500px) {
@@ -404,10 +409,22 @@ input:focus {
   }
 
   #priceSanda{
-    display:none;
+    height: 300px;
+    float: right;
+    margin-right:-150px;
+  }
+
+  .rulesRound{
+    margin: 32% 25%;
+    width: 50%;
   }
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
+
+  .rulesRound{
+    margin: 40% 25%;
+    width:50%;
+  }
 
   #bm{
     width: 700px;
@@ -446,6 +463,13 @@ input:focus {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
+
+  .rulesRound{
+    margin-left:80%;
+    width: 50%;
+    margin-top:40%;
+  }
+  
   .block{
     width:7%;
     bottom: -6%;
@@ -508,6 +532,12 @@ input:focus {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
+
+  .rulesRound{
+    margin-left:80%;
+    width: 50%;
+    margin-top:40%;
+  }
 
   #bm{
     width:100%;
@@ -581,13 +611,20 @@ input:focus {
 }
 
 @media (max-width: 575px) {
+
+  .rulesRound{
+    margin-left:80%;
+    width: 50%;
+    margin-top:40%;
+  }
+  
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
 
   #bm{
     width:100%;
     margin-top:-25%;
   }
-  
+
   .block{
     width: -8%;
     bottom: -6%;
