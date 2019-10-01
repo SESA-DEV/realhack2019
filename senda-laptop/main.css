@@ -1,11 +1,9 @@
 
   
   #bm {
-  width: 1000px;
+  /* width: 800px; */
+  
   /* position: absolute; */
-  float: right;
-  margin-right: -200px;
-  margin-top: -500px;
 
   }
 
@@ -13,10 +11,6 @@
     position: fixed;
    
     width: 100%;
-  
-    text-align: center;
-    float: right;
-
      
      
   }

@@ -2,6 +2,52 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Poppins:300,400,500,600,700&display=swap");
 /* line 6, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_extends.scss */
 
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+#rulesCol6{ 
+  font-family: Merriweather, serif; 
+  font-weight: 500; font-style: normal;
+  font-size: 1.6rem; margin: 0 auto; 
+   } 
+
+#rulesCol6 ol { 
+  line-height: 1.6;
+  list-style-type: none;
+  counter-reset: section;
+  margin-left: 3rem;
+}
+#rulesCol6 li {
+    counter-increment: section;
+    margin-top: 2rem;
+}
+#rulesCol6 li:before {
+    content: counters(section,"");
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    width: 3.5rem;
+    height: 3rem;
+    text-align: center;
+    padding-top: .25rem;
+    font-weight: 700;
+    margin-left: -5rem;
+    margin-right: 1rem;
+    background: rgba(0,0,0,0.025);
+}
+
+@media screen and (max-width: 30em) { 
+  #rules ol { margin-left: 0; } 
+  #rules li:before { 
+    display: block;
+    float: none;
+    margin: 1rem auto;
+  }
+}
+
+#rules{
+  background:linear-gradient(-135deg, rgb(2, 179, 228), rgba(0, 0, 0, 0.8));
+}
 .site {
   overflow-x: hidden;
   /* Unnecessary IMHO, uncomment next line to force hidden behavior */
@@ -13,7 +59,12 @@
 
 .orgnizedwrapper{
   background:rgb(0, 187, 206);
-  padding:0 30px 0 30px;
+  /* padding:0 30px 0 30px; */
+}
+
+#organizeDiv{
+  margin: 0px auto 0px auto;
+  width: 91.5%;
 }
 .rounds{
   position: absolute;
@@ -328,6 +379,11 @@ input:focus {
     width:5%;
     bottom: -7%;
   }
+
+  #bm{
+    margin-top:-250px;
+    width:800px;
+  }
 }
 
 @media only screen and (min-width:1200px) and (max-width: 1500px) {
@@ -342,14 +398,22 @@ input:focus {
     margin-top: 50px;
   }
 
+  #bm{
+    margin-top:-170px;
+    width: 750px;
+  }
+
   #priceSanda{
-    height: 300px;
-    float: right;
-    margin-right: -150px;
+    display:none;
   }
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
 
+  #bm{
+    width: 700px;
+    margin-top: -120px;
+    width:60vw;
+  }
   .block{
     width:7%;
     bottom: -6%;
@@ -385,6 +449,11 @@ input:focus {
   .block{
     width:7%;
     bottom: -6%;
+  }
+
+  #bm{
+    width:100%;
+    margin-top:-25%;
   }
 
   .secondcaption{
@@ -439,6 +508,12 @@ input:focus {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
+
+  #bm{
+    width:100%;
+    margin-top:-25%;
+  }
+
   .block{
     width: -8%;
     bottom: -6%;
@@ -508,6 +583,11 @@ input:focus {
 @media (max-width: 575px) {
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
 
+  #bm{
+    width:100%;
+    margin-top:-25%;
+  }
+  
   .block{
     width: -8%;
     bottom: -6%;

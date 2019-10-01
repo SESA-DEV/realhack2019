@@ -74,7 +74,8 @@
                                     <img src="img/realhack/logo-bg.png" alt="">
                             </div> -->
                             <div class="logo" style="z-index: 10">
-                                <a href="index.html"><img src="img/realhack/logo-bw.png" alt="#" style="width:150px"></a>
+                                <a href="index.html" id="whiteLogo"><img src="img/realhack/logo-bw.png" alt="#" style="width:150px"></a>
+                                <a href="index.html" id="colouredLogo" style="display:none;"><img src="img/realhack/logo.png" alt="#" style="width:150px"></a>
                             </div>
                             <span class="menu-trigger visible-xs">
                                 <span></span>
@@ -111,19 +112,19 @@
 
         <div class="coversection" id="">
                 <img src="img/realhack/frmweb/block.svg" alt="" class="block">
-                <img class="rounds" src="img/realhack/frmweb/rounds.svg" alt="">
-                <img src="img/realhack/frmweb/cross.svg" alt="" class="cross">
+                <img class="rounds wow bounceInRight" data-wow-delay="0.8s" src="img/realhack/frmweb/rounds.svg" alt="">
+                <img src="img/realhack/frmweb/cross.svg" alt="" class="cross wow bounceInRight" data-wow-delay="0.9s">
 
                     <div id="home" class="covercontainer">
-                            <h3 class="coverheader">Welcome to</h3>
-                            <h1 class="covercaption">REALHACK 2.0</h1>
+                            <h3 class="coverheader wow bounceInLeft" data-wow-delay="0.2s">Welcome to</h3>
+                            <h1 class="covercaption wow bounceInLeft" data-wow-delay="0.3s">REALHACK 2.0</h1>
                             <br>
-                            <h2 class="secondcaption" style="margin-bottom:-5px">Sri Lanka's premium </h2>
-                            <h2 class="secondcaption" >24 hour coding hackathon</h2>
+                            <h2 class="secondcaption wow bounceInLeft" data-wow-delay="0.5s" style="margin-bottom:-5px">Sri Lanka's premium </h2>
+                            <h2 class="secondcaption wow bounceInLeft" data-wow-delay="0.5s" >24 hour coding hackathon</h2>
                             
                             <div class="coverbuttondiv">
                                 <div>
-                                    <a href="#" class="coverbutton w-button">Stay tuned...</a>
+                                    <a href="#" class="coverbutton w-button wow bounceInLeft" data-wow-delay="0.7s">Stay tuned...</a>
                                 </div>
                             </div>
                     </div>
@@ -137,7 +138,7 @@
 
         <!--::our client part start::-->
         <div class="orgnizedwrapper">
-                <div style="background:#ffffff;">
+                <div id="organizeDiv" style="background:#ffffff;">
                         <div id="particles-js" style="width: 35%"></div>
                 
                         <section  class="client_part section_padding">
@@ -242,14 +243,14 @@
         <!--::about part end::-->
 
         
-        <section id="awards" class="section_padding award_part" style="paddin-bottom:0">
+        <section id="awards" class="section_padding award_part" style="padding-bottom:0">
                 <!-- <div style="position:absolute;">
                     <img style="height:300px" src="img/realhack/santa/king.png" alt="">
                 </div> -->
                 <div class="container">
                     <div style="width:100%">
 
-            <h1 style="font-size: 70px;padding: 50px 50px 0 0;color:rgb(233, 157, 35);display: inline;">AWARDS</h1>
+            <h1 class=" wow bounceInUp" style="font-size: 70px;padding: 50px 50px 0 0;color:rgb(233, 157, 35);display: inline;">AWARDS</h1>
             <img style="float: right;" src="img/realhack/santa/king.png" id="priceSanda" alt="">
             </div>
             <div class="row">
@@ -269,6 +270,30 @@
                 </div>
             </div>
         </div>
+        </section>
+
+
+        <section id="rules">
+            <div class="rulesContainer" style="width:92.5%;margin:0px auto 0 auto">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div id='bm'></div>
+                    </div>
+                    <div class="col-lg-6" id="rulesCol6">
+                            <h1 class="wow bounceInLeft pixelFont" 
+                            style="font-size: 50px;margin-top:20px; color: #ffffff;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+                            RULES & REGULATIONS
+                        </h1>
+    
+                        <ol>
+                                <li>When a distinguished but elderly scientist states that something is possible, he is almost certainly right. When he states that something is impossible, he is very probably wrong.
+                                <li>The only way of discovering the limits of the possible is to venture a little way past them into the impossible.
+                                <li>Any sufficiently advanced technology is indistinguishable from magic.
+                              </ol>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <!-- TIMELINE part start-->
