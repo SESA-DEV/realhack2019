@@ -2,6 +2,19 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Poppins:300,400,500,600,700&display=swap");
 /* line 6, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_extends.scss */
 
+.site {
+  overflow-x: hidden;
+  /* Unnecessary IMHO, uncomment next line to force hidden behavior */
+  /* overflow-x: hidden !important; */
+  /* Additional tunning proposed by the community */
+  /* position: relative; */
+  width: 100%;
+}
+
+.orgnizedwrapper{
+  background:rgb(0, 187, 206);
+  padding:0 30px 0 30px;
+}
 .rounds{
   position: absolute;
     left: auto;
@@ -9,6 +22,14 @@
     right: -12%;
     bottom: -53%;
     width: 45%;
+}
+
+.block{
+  position: absolute;
+    left: auto;
+    top: auto;
+    right: 11%;
+    z-index: 1;
 }
 
 .cross{
@@ -244,7 +265,8 @@ body {
   padding: 0;
   margin: 0;
   font-size: 14px;
-  background-color: #ffffff
+  background-color: #ffffff;
+  /* overflow-x: hidden; */
 }
 
 /* line 11, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
@@ -301,9 +323,19 @@ input:focus {
   #priceSanda{
     display: none;
   }
+
+  .block{
+    width:5%;
+    bottom: -7%;
+  }
 }
 
 @media only screen and (min-width:1200px) and (max-width: 1500px) {
+
+  .block{
+    width:7%;
+    bottom: -6%;
+  }
   #divAnimation>img{
     width: 600px;
     margin-right: 50px;
@@ -317,6 +349,21 @@ input:focus {
   }
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
+
+  .block{
+    width:7%;
+    bottom: -6%;
+  }
+
+  .rounds{
+    bottom: -20%;
+    right: -25%;
+  }
+
+  .cross{
+    width: 5%;
+    right: 5%;
+  }
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
   .section_padding {
     padding: 80px 0px;
@@ -335,6 +382,25 @@ input:focus {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
+  .block{
+    width:7%;
+    bottom: -6%;
+  }
+
+  .secondcaption{
+    font-size: 2.5em;
+  }
+
+  .rounds{
+    bottom: -30%;
+    width: 55%;
+    right: -30%;
+  }
+
+  .cross{
+    width: 6%;
+    right: 8%;
+  }
   .section_padding {
     padding: 70px 0px;
   }
@@ -373,6 +439,10 @@ input:focus {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
+  .block{
+    width: -8%;
+    bottom: -6%;
+  }
   .section_padding {
     padding: 70px 0px;
   }
@@ -437,6 +507,22 @@ input:focus {
 
 @media (max-width: 575px) {
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
+
+  .block{
+    width: -8%;
+    bottom: -6%;
+  }
+
+  .rounds{
+    bottom: -30%;
+    width: 80%;
+    right: -40%;
+  }
+
+  .secondcaption{
+    font-size: 2.5em;
+  }
+
   .section_padding {
     padding: 70px 0px;
   }
