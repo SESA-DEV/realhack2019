@@ -2,6 +2,23 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Poppins:300,400,500,600,700&display=swap");
 /* line 6, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_extends.scss */
 
+.rounds{
+  position: absolute;
+    left: auto;
+    top: auto;
+    right: -12%;
+    bottom: -53%;
+    width: 45%;
+}
+
+.cross{
+  position: absolute;
+    left: auto;
+    top: 20%;
+    right: 3%;
+    bottom: auto;
+    width: 4%;
+}
 .iconbg{
   position: absolute;
   margin-top: -50px;
@@ -63,7 +80,7 @@
 
 .covercaption{
   color: #fff;
-  font-size: 9em;
+  font-size: 6.5em;
   line-height: .8;
   font-weight: 700;
   letter-spacing: .05em;
@@ -71,6 +88,11 @@
   font-family: 'Mont',sans-serif;
 }
 
+.secondcaption{
+  color:#ffffff;
+  font-family: 'Mont',sans-serif;
+  font-size: 4em;
+}
 .coverbuttondiv{
   display: block;
     max-width: 960px;

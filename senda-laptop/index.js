@@ -3,5 +3,5 @@ var animation = bodymovin.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'laptop.json'
+    path: 'senda-laptop/laptop.json'
   })
