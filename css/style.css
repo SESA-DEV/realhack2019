@@ -4,6 +4,17 @@
 
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
+.bg-r{
+  position: absolute;
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom: auto;
+    width: 70%;
+    height: 100%;
+    background-color: #f8f9fb;
+}
+
 #rulesCol6{ 
   font-family: Merriweather, serif; 
   font-weight: 500; font-style: normal;
@@ -46,7 +57,7 @@
 }
 
 #rules{
-  background:linear-gradient(-135deg, rgb(2, 179, 228), rgba(0, 0, 0, 0.8));
+  background:linear-gradient(-135deg, rgb(149, 232, 255), rgba(0, 0, 0, 0.8));
 }
 .site {
   overflow-x: hidden;
@@ -386,7 +397,7 @@ input:focus {
   }
 
   .rulesRound{
-    margin: 30% 25%;
+    margin: 25% 25%;
     width:60%;
   }
 }
@@ -465,9 +476,11 @@ input:focus {
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
 
   .rulesRound{
-    margin-left:80%;
+    /* margin-left:80%;
     width: 50%;
-    margin-top:40%;
+    margin-top:40%; */
+    display: none;
+
   }
   
   .block{
@@ -534,9 +547,11 @@ input:focus {
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
 
   .rulesRound{
-    margin-left:80%;
+    /* margin-left:80%;
     width: 50%;
-    margin-top:40%;
+    margin-top:40%; */
+    display: none;
+
   }
 
   #bm{
@@ -613,11 +628,12 @@ input:focus {
 @media (max-width: 575px) {
 
   .rulesRound{
-    margin-left:80%;
+    /* margin-left:80%;
     width: 50%;
-    margin-top:40%;
+    margin-top:40%; */
+    display: none;
   }
-  
+
   /* line 39, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
 
   #bm{

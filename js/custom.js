@@ -38,6 +38,8 @@
   }
   
   let roundHeight = $(".rounds").height();
+  let bgrwidth = $(".rulesRound").width();
+
   // menu fixed js code
   $(window).scroll(function () {
     var window_top = $(window).scrollTop() + 1;
@@ -65,6 +67,14 @@
       let r = roundHeight + (window_top*1.1);
       $(".rounds").css('width',(r +'px'));
       // //alert("x");
+    }
+
+    
+    if(window_top > 200 && window_top < 2500) {
+        let z = bgrwidth - (window_top*10/60);
+        $(".bg-r").css('width',(z +'px'));
+
+        console.log("rrr",z);
     }
   });
 
