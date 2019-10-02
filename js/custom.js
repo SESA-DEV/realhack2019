@@ -23,6 +23,7 @@
   });
 
 
+
   var review = $('.client_review_part');
   if (review.length) {
     review.owlCarousel({
@@ -71,10 +72,10 @@
 
     
     if(window_top > 200 && window_top < 2500) {
-        let z = bgrwidth - (window_top*10/60);
+        let z = bgrwidth - (window_top*30/60);
         $(".bg-r").css('width',(z +'px'));
 
-        console.log("rrr",z);
+        //console.log("rrr",z);
     }
   });
 

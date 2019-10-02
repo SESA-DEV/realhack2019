@@ -10,7 +10,7 @@
     bottom: auto;
     width: 70%;
     height: 100%;
-    background-color: #f8f9fb;
+    background-color: #eff4ff;;
 }
 
 #rulesCol6{ 
@@ -36,19 +36,26 @@
     margin-top: 2rem;
 }
 #rulesCol6 li:before {
-    content: counters(section,"");
+    content: "";
     border: 2px solid #343a40;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: inline-block;
     float: left;
-    width: 3.5rem;
-    height: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
     text-align: center;
     padding-top: .25rem;
+    margin-top:8px;
     font-weight: 700;
     margin-left: -5rem;
     margin-right: 1rem;
     background: rgba(0,0,0,0.025);
+    vertical-align: middle;
+}
+
+.ruleItem:hover {
+  -webkit-animation: heartBeat 1s;
+  animation: heartBeat 1s;
 }
 
 @media screen and (max-width: 30em) { 
@@ -106,6 +113,17 @@
     bottom: auto;
     width: 4%;
 }
+
+.curveLine{
+  position: absolute;
+    left: auto;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    width: 42vw;
+    max-width: 575px;
+}
+
 .iconbg{
   position: absolute;
   margin-top: -50px;
