@@ -33,6 +33,7 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="senda-laptop/main.css">
+    <link rel="stylesheet" href="css/fakeLoader.css">
     
     
 </head>
@@ -63,6 +64,7 @@
         theme_color="#20cef5">
     </div>
 
+    <div id="fakeloader"></div>
     <div class="site">
         <!--::header part start::-->
         <header class="main_menu home_menu">
@@ -546,8 +548,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.8/lottie.min.js"></script>
     <script src="senda-laptop/index.js"></script>
     
+    <script src="js/fakeLoader.min.js"></script>
 
     <script>
+
+            // Page preloader
+            $("#fakeloader").fakeLoader({
+                timeToHide:1000,
+                zIndex:"999999",//Default zIndex
+                bgColor:"#ffffff",
+                spinner:"spinner1"
+            });	
+
+            // show body after site load
+            $('body').show();
       new WOW().init();
 
       new TypeIt('#txtAbout', {//We are back to give you a real feeling of a hackathon
