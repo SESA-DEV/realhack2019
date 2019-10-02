@@ -2,8 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Poppins:300,400,500,600,700&display=swap");
 /* line 6, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_extends.scss */
 
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
-
 .bg-r{
   position: absolute;
     left: 0%;
@@ -16,7 +14,7 @@
 }
 
 #rulesCol6{ 
-  font-family: Merriweather, serif; 
+  font-family:  Roboto,sans-serif,proxima-nova,'Helvetica Neue'; 
   font-weight: 500; font-style: normal;
   font-size: 1.6rem; margin: 0 auto; 
    } 
@@ -26,6 +24,12 @@
   list-style-type: none;
   counter-reset: section;
   margin-left: 3rem;
+  color:#fff;
+}
+
+#rulesCol6 t {
+  font-weight: bold;
+  color: #343a40;
 }
 #rulesCol6 li {
     counter-increment: section;
@@ -33,7 +37,7 @@
 }
 #rulesCol6 li:before {
     content: counters(section,"");
-    border: 2px solid #000;
+    border: 2px solid #343a40;
     border-radius: 50%;
     display: inline-block;
     float: left;
