@@ -561,8 +561,17 @@
                 spinner:"spinner1"
             });	
 
+
             // show body after site load
             $('body').show();
+
+            $('.grid').masonry({
+                    itemSelector: '.grid-item',
+                    columnWidth: '.grid-sizer',
+                    percentPosition: true
+                });
+
+
       new WOW().init();
 
       new TypeIt('#txtAbout', {//We are back to give you a real feeling of a hackathon
