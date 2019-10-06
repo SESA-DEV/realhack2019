@@ -16,10 +16,6 @@
     $('select').niceSelect();
   });
 
-
-
-
-
   var review = $('.client_review_part');
   if (review.length) {
     review.owlCarousel({

@@ -23,7 +23,7 @@
   line-height: 1.6;
   list-style-type: none;
   counter-reset: section;
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
   color:#fff;
 }
 
@@ -36,9 +36,9 @@
     margin-top: 2rem;
 }
 #rulesCol6 li:before {
-    content: "";
+    /* content: "";
     border: 2px solid #343a40;
-    /* border-radius: 50%; */
+    //border-radius: 50%;
     display: inline-block;
     float: left;
     width: 1.5rem;
@@ -50,7 +50,7 @@
     margin-left: -5rem;
     margin-right: 1rem;
     background: rgba(0,0,0,0.025);
-    vertical-align: middle;
+    vertical-align: middle; */
 }
 
 .ruleItem:hover {

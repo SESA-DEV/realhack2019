@@ -34,6 +34,7 @@
 
     <link rel="stylesheet" href="senda-laptop/main.css">
     <link rel="stylesheet" href="css/fakeLoader.css">
+    <link rel="stylesheet" href="css/flipclock.css">
     
     
 </head>
@@ -116,7 +117,9 @@
                 <img src="img/realhack/frmweb/block.svg" alt="" class="block">
                 <img class="rounds wow bounceInRight" data-wow-delay="0.8s" src="img/realhack/frmweb/rounds.svg" alt="">
                 <img src="img/realhack/frmweb/cross.svg" alt="" class="cross wow bounceInRight" data-wow-delay="0.9s">
+                
 
+                
                     <div id="home" class="covercontainer">
                             <h3 class="coverheader wow bounceInLeft" data-wow-delay="0.2s">Welcome to</h3>
                             <h1 class="covercaption wow bounceInLeft" data-wow-delay="0.3s">REALHACK 2.0</h1>
@@ -127,8 +130,11 @@
                             <div class="coverbuttondiv">
                                 <div>
                                     <a href="#" class="coverbutton w-button wow bounceInLeft" data-wow-delay="0.7s">Registrations will be open on 14 th Octomber</a>
+
+                                    
                                 </div>
                             </div>
+                            
                     </div>
 
                     
@@ -292,15 +298,15 @@
                             RULES & REGULATIONS
                         </h1>
     
-                        <ol class="wow bounceInUp">
+                        <ol class="wow bounceInUp" style="padding-left:0;">
                                 <li class="ruleItem" data-wow-delay="0.3s">All participants must be <t>undergraduates</t> of any recognized <t>University or Higher Educational Institue.</t></li>
-                                <li class="ruleItem" data-wow-delay="0.5s">A Team should consits <t>3 to 5 members</t></li>
+                                <li class="ruleItem" data-wow-delay="0.5s">Each team should consist of maximum of <t>4 members and minimum of 2 members</t></li>
                                 <li class="ruleItem" data-wow-delay="0.7s">All participants must compete in <t>pre-hack</t></li>
                                 
                               </ol>
                     </div>
 
-                    <img style="position:absolute;" class="rulesRound" src="img/realhack/frmweb/rounds.svg" alt="">
+                    <!-- <img style="position:absolute;" class="rulesRound" src="img/realhack/frmweb/rounds.svg" alt=""> -->
                 </div>
             </div>
         </section>
@@ -550,8 +556,27 @@
     <script src="senda-laptop/index.js"></script>
     
     <script src="js/fakeLoader.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
 
     <script>
+
+        $(document).ready(()=>{
+            var clock;
+
+            clock = $('.clock').FlipClock({
+                clockFace: 'DailyCounter',
+                autoStart: false,
+                callbacks: {
+                    stop: function() {
+                    $('.message').html('The clock has stopped!')
+                    }
+                }
+            });
+                
+            clock.setTime(220880);
+            clock.setCountdown(true);
+            clock.start();
+        });
 
             // Page preloader
             $("#fakeloader").fakeLoader({
