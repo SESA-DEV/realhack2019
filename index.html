@@ -33,6 +33,7 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="senda-laptop/main.css">
+    <link rel="stylesheet" href="css/fakeLoader.css">
     
     
 </head>
@@ -63,6 +64,7 @@
         theme_color="#20cef5">
     </div>
 
+    <div id="fakeloader"></div>
     <div class="site">
         <!--::header part start::-->
         <header class="main_menu home_menu">
@@ -277,7 +279,7 @@
         </section>
 
 
-        <section id="rules">
+        <section id="rules" style="padding-bottom:50px; ">
             <div class="rulesContainer" style="width:92.5%;margin:0px auto 0 auto">
 
                 <div class="row">
@@ -290,10 +292,10 @@
                             RULES & REGULATIONS
                         </h1>
     
-                        <ol>
-                                <li class="wow bounceInUp" data-wow-delay="0.3s">All participants must be undergraduates of any recogined University or Higher Educational Institue.</li>
-                                <li class="wow bounceInUp" data-wow-delay="0.5s">A Team should consits 3 to 5 members</li>
-                                <li class="wow bounceInUp" data-wow-delay="0.7s">All participants must compete in pre-hack</li>
+                        <ol class="wow bounceInUp">
+                                <li class="ruleItem" data-wow-delay="0.3s">All participants must be <t>undergraduates</t> of any recogined <t>University or Higher Educational Institue.</t></li>
+                                <li class="ruleItem" data-wow-delay="0.5s">A Team should consits <t>3 to 5 members</t></li>
+                                <li class="ruleItem" data-wow-delay="0.7s">All participants must compete in <t>pre-hack</t></li>
                                 
                               </ol>
                     </div>
@@ -308,6 +310,7 @@
 
                 <section id="timeline" class="feature_part section_padding" style="  background-color: #000000;font-family: Roboto,sans-serif,proxima-nova,'Helvetica Neue';">
                         <div id="awared_particle"></div>
+                        <img src="img/realhack/frmweb/linebg.svg" class="curveLine" alt="">
                 <div class="container">
                 </div>
                 <div class="timeline">
@@ -546,8 +549,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.8/lottie.min.js"></script>
     <script src="senda-laptop/index.js"></script>
     
+    <script src="js/fakeLoader.min.js"></script>
 
     <script>
+
+            // Page preloader
+            $("#fakeloader").fakeLoader({
+                timeToHide:1000,
+                zIndex:"999999",//Default zIndex
+                bgColor:"#ffffff",
+                spinner:"spinner1"
+            });	
+
+            // show body after site load
+            $('body').show();
       new WOW().init();
 
       new TypeIt('#txtAbout', {//We are back to give you a real feeling of a hackathon

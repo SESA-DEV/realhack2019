@@ -2,8 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Poppins:300,400,500,600,700&display=swap");
 /* line 6, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_extends.scss */
 
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
-
 .bg-r{
   position: absolute;
     left: 0%;
@@ -12,11 +10,11 @@
     bottom: auto;
     width: 70%;
     height: 100%;
-    background-color: #f8f9fb;
+    background-color: #eff4ff;;
 }
 
 #rulesCol6{ 
-  font-family: Merriweather, serif; 
+  font-family:  Roboto,sans-serif,proxima-nova,'Helvetica Neue'; 
   font-weight: 500; font-style: normal;
   font-size: 1.6rem; margin: 0 auto; 
    } 
@@ -26,25 +24,38 @@
   list-style-type: none;
   counter-reset: section;
   margin-left: 3rem;
+  color:#fff;
+}
+
+#rulesCol6 t {
+  font-weight: bold;
+  color: #343a40;
 }
 #rulesCol6 li {
     counter-increment: section;
     margin-top: 2rem;
 }
 #rulesCol6 li:before {
-    content: counters(section,"");
-    border: 2px solid #000;
-    border-radius: 50%;
+    content: "";
+    border: 2px solid #343a40;
+    /* border-radius: 50%; */
     display: inline-block;
     float: left;
-    width: 3.5rem;
-    height: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
     text-align: center;
     padding-top: .25rem;
+    margin-top:8px;
     font-weight: 700;
     margin-left: -5rem;
     margin-right: 1rem;
     background: rgba(0,0,0,0.025);
+    vertical-align: middle;
+}
+
+.ruleItem:hover {
+  -webkit-animation: heartBeat 1s;
+  animation: heartBeat 1s;
 }
 
 @media screen and (max-width: 30em) { 
@@ -102,6 +113,17 @@
     bottom: auto;
     width: 4%;
 }
+
+.curveLine{
+  position: absolute;
+    left: auto;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    width: 42vw;
+    max-width: 575px;
+}
+
 .iconbg{
   position: absolute;
   margin-top: -50px;
