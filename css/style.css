@@ -12,9 +12,9 @@
     height: 100%;
     background-color: #eff4ff;;
 }
-
+/* //'Open Sans', sans-serif; */
 #rulesCol6{ 
-  font-family:  Roboto,sans-serif,proxima-nova,'Helvetica Neue'; 
+  font-family:  'Open Sans', sans-serif; 
   font-weight: 500; font-style: normal;
   font-size: 1.6rem; margin: 0 auto; 
    } 
@@ -25,6 +25,14 @@
   counter-reset: section;
   /* margin-left: 3rem; */
   color:#fff;
+}
+
+up{
+  top: -.5em;
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
 }
 
 #rulesCol6 t {
@@ -855,16 +863,16 @@ h4,
 h5,
 h6 {
   color: #1f1b1b;
-  font-family: "Anton", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* line 140, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
 p {
   /* font-family: "Poppins", sans-serif; */
   line-height: 1.8;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 0px;
-  color: #888888;
+  color: #000000;
   font-weight: 300;
 }
 
@@ -3976,7 +3984,7 @@ ul {
 
 /* line 61, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_skil_part.scss */
 .skil_part .skil_text .single_skil p {
-  /* font-family: "Anton", sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
   position: absolute;
   bottom: 15px;
 }
@@ -4067,7 +4075,7 @@ ul {
 
 /* line 17, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_cta_area.scss */
 .cta_area .our_expesience p {
-  /* font-family: "Anton", sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
   font-size: 15px;
   line-height: 13px;
 }
@@ -4373,7 +4381,7 @@ ul {
 .review_part h3 {
   font-size: 22px;
   font-weight: 500;
-  /* font-family: "Anton", sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
   margin-bottom: 4px;
 }
 
