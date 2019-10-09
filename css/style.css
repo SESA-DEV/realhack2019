@@ -1,7 +1,7 @@
 /**************** extend css start ****************/
 @import url("https://fonts.googleapis.com/css?family=Anton|Poppins:300,400,500,600,700&display=swap");
 /* line 6, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_extends.scss */
-
+#footer p{color:#ffffff!important;}
 .bg-r{
   position: absolute;
     left: 0%;
