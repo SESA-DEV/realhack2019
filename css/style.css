@@ -91,19 +91,19 @@ up{
 }
 
 #sponcers{
-  background: #101010;
+  /* background: #101010; */
   min-height: 480px;
   position: relative;
 }
 #sponcers:before{
-  background-image:  -webkit-linear-gradient(left, #17a2b8 0% ,#101010 50%, #17a2b8 100% );
+  /* background-image:  -webkit-linear-gradient(left, #17a2b8 0% ,#101010 50%, #17a2b8 100% ); */
+  background: linear-gradient(90deg, #101010 50%, #040404 50%);
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   content: '';
-  opacity: 0.382;
 }
 
 .sponcercap{

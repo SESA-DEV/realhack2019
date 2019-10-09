@@ -33,8 +33,8 @@
 
 	if(@mail($to, $subject, $body, $headers))
 	{
-	echo "1";
+		echo "1";
 	}else{
-	echo "2";
+		echo "2";
 	}
 ?>
