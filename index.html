@@ -131,6 +131,20 @@
 
 
                             <div class="coverbuttondiv">
+                                    <h6 class="secondcaption wow bounceInLeft" data-wow-delay="0.5s" style="font-size: 1.8em" >Registraion will be closed 28<up>th</up> of October</h6>
+                                <div id="counterdiv">
+                                    <div class="row" style="margin-left:0;margin-right:0;">
+                                        
+                                        <div class="col-lg-6 wow bounceInLeft"  data-wow-delay="0.8s" style="background: rgb(233, 157, 35);padding:10px;">
+                                                <div id="timer" class="d-flex">
+                                                  <div class="time pl-3" id="days"></div>
+                                                  <div class="time pl-3" id="hours"></div>
+                                                  <div class="time pl-3" id="minutes"></div>
+                                                  <div class="time pl-3" id="seconds"></div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div>
                                     <a style="line-height: 20px;padding: 10px 25px;" 
                                         href="https://docs.google.com/forms/d/e/1FAIpQLSduk3if3xgk424Xg21-8oYdvVV7jT_Tr9r4DnXqhB9DS6XGiA/viewform?usp=sf_link" 
@@ -140,19 +154,7 @@
                                     </a>
                                 </div>
 
-                                <!-- <div id="counterdiv">
-                                        <div class="row" style="margin-left:0;margin-right:0;">
-                                            
-                                            <div class="col-lg-6 wow bounceInLeft"  data-wow-delay="0.8s" style="background: rgb(233, 157, 35);padding:10px;">
-                                                    <div id="timer" class="d-flex">
-                                                      <div class="time pl-3" id="days"></div>
-                                                      <div class="time pl-3" id="hours"></div>
-                                                      <div class="time pl-3" id="minutes"></div>
-                                                      <div class="time pl-3" id="seconds"></div>
-                                                    </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
+
                             </div>
 
 
@@ -543,7 +545,7 @@
                                     style="font-size: 44px;font-weight: 800;margin-bottom: 30px;margin-left: 10px; color: #00bbce;">
                                     HAVE ANY QUESTIONS?
                                 </h1>
-                                <form id="formContact" action="" method="post">
+                                <form id="formContact" action="contact_process.php" method="post">
                                     <div class="divContactField">
                                         <input type="text" id="name" placeholder="Name" class="contactInput">
                                     </div>
@@ -557,7 +559,7 @@
                                     </div>
             
                                     <div class="dviContactField">
-                                        <input type="submit" value="Ask.." class="contactSubmit">
+                                        <input id="btnFormSubmit" type="submit" value="Ask.." class="contactSubmit">
                                     </div>
                                 </form>
                             </div>
@@ -788,31 +790,37 @@
 
 particlesJS("awared_particle", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#f0f0f0"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.10422178395625899,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":1,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
     
+    $(document).ready(()=> {
 
-    // contact us form submit
-    $('#formContact').on('submit',(e)=>{
-        e.preventDefault();
-        
-        let data = {
-            "name": $("#name").val(),
-            "message":$("#message").val(),
-            "email" :$("#email").val()
-        };
-
-        $.ajax({
-            url : 'contact_process.php',
-            method: 'POST',
-            data: data,
-            success: (data)=>{
-                if(data == "1") {
-                    alert("We'll contact you soon");
-                }
-                else {
-                    alert("Error occured, please reach us directly through 'info@realhack.info' if this error continues");
-                }
-            }
+        $("#btnFormSubmit").on('click',(e)=> {
+            e.preventDefault();
+            alert("s");
         })
-    })
+        // contact us form submit
+        $('#formContact').submit((e)=>{
+            e.preventDefault();
+            
+            let data = {
+                "name": $("#name").val(),
+                "message":$("#message").val(),
+                "email" :$("#email").val()
+            };
+
+            $.ajax({
+                url : 'contact_process.php',
+                method: 'POST',
+                data: data,
+                success: (data)=>{
+                    if(data == "1") {
+                        alert("We'll contact you soon");
+                    }
+                    else {
+                        alert("Error occured, please reach us directly through 'info@realhack.info' if this error continues");
+                    }
+                }
+            })
+        })
+    });
     </script>
     
     
