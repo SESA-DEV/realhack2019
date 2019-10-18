@@ -17,7 +17,7 @@
 
     function makeTimer() {
 
-      var endTime = new Date("28 October 2019 23:59:59 GMT+05:30");			
+      var endTime = new Date("17 October 2019 23:59:59 GMT+05:30");			
       endTime = (Date.parse(endTime) / 1000);
   
       var now = new Date();
@@ -33,6 +33,14 @@
       if (hours < "10") { hours = "0" + hours; }
       if (minutes < "10") { minutes = "0" + minutes; }
       if (seconds < "10") { seconds = "0" + seconds; }
+
+      if(days < "0") {
+        days = "00";
+        hours = "00";
+        minutes = "00";
+        seconds = "00";
+
+      }
   
       $("#days").html(days + "<span>Days</span>");
       $("#hours").html(hours + "<span>Hours</span>");
